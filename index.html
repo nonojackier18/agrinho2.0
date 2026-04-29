@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Campo Vivo</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f8f4;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(90deg, #0d3b1e, #2e7d32);
+  color: white;
+  padding: 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav {
+  text-align: right;
+  margin-top: -30px;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  background: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef') center/cover;
+  color: white;
+  padding: 100px 40px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  max-width: 500px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  border: none;
+  background: #2e7d32;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+  text-align: center;
+}
+
+.card {
+  width: 200px;
+}
+
+/* SECTION */
+.section {
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.section img {
+  width: 50%;
+  border-radius: 10px;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li::before {
+  content: "✔ ";
+  color: green;
+}
+
+/* FOOTER */
+footer {
+  background: #0d3b1e;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+  <div class="logo">🌱 Campo Vivo</div>
+  <nav>
+    <a href="#">Início</a>
+    <a href="#">Sobre</a>
+    <a href="#">Práticas</a>
+    <a href="#">Contato</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Semear hoje,<br>colher amanhã.</h1>
+  <p>
+    Promovemos uma agricultura sustentável que alimenta o mundo,
+    preserva o planeta e constrói um futuro melhor.
+  </p>
+  <button onclick="mensagem()">Saiba mais</button>
+  <p id="msg"></p>
+</section>
+
+<section class="cards">
+  <div class="card">
+    <h3>🌿 Produção Consciente</h3>
+    <p>Mais produtividade com respeito ao meio ambiente.</p>
+  </div>
+
+  <div class="card">
+    <h3>💧 Recursos Preservados</h3>
+    <p>Uso responsável da água e do solo.</p>
+  </div>
+
+  <div class="card">
+    <h3>👨‍🌾 Valor Social</h3>
+    <p>Desenvolvimento das comunidades rurais.</p>
+  </div>
+
+  <div class="card">
+    <h3>🌍 Futuro Garantido</h3>
+    <p>Equilíbrio entre produção e natureza.</p>
+  </div>
+</section>
+
+<section class="section">
+  <img src="https://images.unsplash.com/photo-1592982537447-7440770cbfc9">
+
+  <div>
+    <h2>Práticas que fazem a diferença</h2>
+    <ul>
+      <li>Plantio direto</li>
+      <li>Rotação de culturas</li>
+      <li>Uso eficiente da água</li>
+      <li>Redução de agrotóxicos</li>
+      <li>Preservação ambiental</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Campo Vivo - Sustentabilidade que gera vida</p>
+</footer>
+
+<script>
+function mensagem() {
+  document.getElementById("msg").innerHTML =
+    "🌱 O futuro do campo depende de escolhas sustentáveis hoje!";
+}
+</script>
+
+</body>
+</html>
