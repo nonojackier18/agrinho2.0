@@ -1,108 +1,83 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <title>Campo Vivo</title>
-
-  <!-- Conectar CSS -->
-
-  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- HEADER -->
-
 <header>
-  <div class="logo">🌱 Campo Vivo</div>
-
-  <nav>
-    <a href="#">Início</a>
-    <a href="#">Sobre</a>
-    <a href="#">Práticas</a>
-    <a href="#">Contato</a>
-  </nav>
+  <center>
+    <h1>🌱 Campo Vivo</h1>
+  </center>
 </header>
 
-<!-- HERO -->
+<hr>
 
-<section class="hero">
-  <h1>Semear hoje,<br>colher amanhã.</h1>
+<section>
+  <h2>Semear hoje,<br>colher amanhã.</h2>
 
   <p>
     Promovemos uma agricultura sustentável que alimenta o mundo,
     preserva o planeta e constrói um futuro melhor para todos.
   </p>
 
-<button onclick="mostrarMensagem()">Saiba mais</button>
-
+  <button onclick="mostrarMensagem()">Saiba mais</button>
   <p id="mensagem"></p>
 </section>
 
-<!-- CARDS -->
+<hr>
 
-<section class="cards">
+<section>
+  <h2>Benefícios</h2>
 
-  <div class="card">
+  <div>
     <h3>🌿 Produção Consciente</h3>
     <p>Técnicas modernas que respeitam o meio ambiente.</p>
   </div>
 
-  <div class="card">
+  <div>
     <h3>💧 Recursos Preservados</h3>
     <p>Uso responsável da água, solo e biodiversidade.</p>
   </div>
 
-  <div class="card">
+  <div>
     <h3>👨‍🌾 Valor Social</h3>
     <p>Desenvolvimento das comunidades rurais.</p>
   </div>
 
-  <div class="card">
+  <div>
     <h3>🌍 Futuro Garantido</h3>
     <p>Equilíbrio entre produção e preservação.</p>
   </div>
-
 </section>
 
-<!-- SEÇÃO PRÁTICAS -->
+<hr>
 
-<section class="section">
+<section>
+  <h2>Práticas que fazem a diferença</h2>
 
-  <img src="https://images.unsplash.com/photo-1592982537447-7440770cbfc9" alt="Agricultura sustentável">
+  <img src="https://images.unsplash.com/photo-1592982537447-7440770cbfc9" width="400">
 
-  <div>
-    <h2>Práticas que fazem a diferença</h2>
-
-```
-<ul>
-  <li>Plantio direto</li>
-  <li>Rotação de culturas</li>
-  <li>Uso eficiente da água</li>
-  <li>Redução de agrotóxicos</li>
-  <li>Preservação ambiental</li>
-</ul>
-```
-
-  </div>
-
+  <ul>
+    <li>Plantio direto</li>
+    <li>Rotação de culturas</li>
+    <li>Uso eficiente da água</li>
+    <li>Redução de agrotóxicos</li>
+    <li>Preservação ambiental</li>
+  </ul>
 </section>
 
-<!-- FOOTER -->
+<hr>
 
 <footer>
-  <p>© 2026 Campo Vivo - Sustentabilidade que gera vida</p>
+  <center>
+    <p>Feito por Nohemi Contreras</p>
+  </center>
 </footer>
 
-<!-- JAVASCRIPT -->
-
-<script>
-function mostrarMensagem() {
-  document.getElementById("mensagem").innerHTML =
-    "🌱 O futuro do campo depende de escolhas sustentáveis hoje!";
-}
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
